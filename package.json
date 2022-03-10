@@ -2,16 +2,27 @@
   "name": "employee-crud",
   "version": "1.0.0",
   "description": "App CRUD que alimentará um front-end desenvolvido com VueJS",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js  -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Francisco-gui/employee-crud.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "express",
+    "postgresql",
+    "sql",
+    "javascript"
+  ],
+  "author": "Francisco Guilherme",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Francisco-gui/employee-crud/issues"
@@ -25,6 +36,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.17.3",
     "express-promise-router": "^4.1.1",
     "pg": "^8.7.3"
