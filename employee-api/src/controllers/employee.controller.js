@@ -14,3 +14,8 @@ exports.createEmployee = async (req, res) => {
     },
   });
 };
+
+exports.listAllEmployees = async (req, res) => {
+  const response = await db.query("SELECT * FROM employee ORDER BY name ASC");
+  res.status(200).send(response.rows);
+};
