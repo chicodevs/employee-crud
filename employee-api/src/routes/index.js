@@ -1,5 +1,3 @@
-// Arquivo responsável pela chamada da API no app pelo lado do backend
-
 const express = require('express');
 
 const router = express.Router();
