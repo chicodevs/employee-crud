@@ -1,7 +1,7 @@
 import Api from './Api';
 
 export default {
-  
+
   async createNewEmployee(employee) {
     try {
       const response = await Api().post('/employees', employee);

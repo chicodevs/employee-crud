@@ -6,7 +6,6 @@
       </div>
       <div class="card-body">
         <form v-on:submit.prevent="handleSubmitForm()">
-          
           <div class="form-group">
             <label class="font-weight-bold">Employee Name</label>
             <input
@@ -27,7 +26,6 @@
               'Employee Name' field is required!
             </div>
           </div>
-         
           <div class="form-group">
             <label class="font-weight-bold">Job Role</label>
             <input
@@ -48,7 +46,6 @@
               'Job Role' field is required!
             </div>
           </div>
-         
           <div class="form-group">
             <label class="font-weight-bold">Salary</label>
             <input
@@ -69,7 +66,6 @@
               'Salary' field is required!
             </div>
           </div>
-          
           <div class="form-group">
             <label class="font-weight-bold">Birth</label>
             <input
@@ -90,7 +86,6 @@
               'Birth' field is required!
             </div>
           </div>
-          
           <div class="form-group">
             <label class="font-weight-bold">Employee Registration</label>
             <input
@@ -114,9 +109,11 @@
               'Employee Registration' field is required!
             </div>
           </div>
-        
           <div class="form-group">
-            <button @click="submitNewEmployee" class="btn btn-primary">
+            <button
+              @click="submitNewEmployee"
+              class="btn btn-primary"
+            >
               <font-awesome-icon :icon="['fas', 'user-plus']" /> Employee
             </button>
           </div>
