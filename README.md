@@ -10,7 +10,7 @@ Front-end builded in [Vue.js](https://vuejs.org/) + [Boostrap 4](https://getboot
 1) clone repository and go to project folder
 
 ```bash
-git clone https://github.com/Francisco-gui/employee-crud.git
+git clone https://github.com/chicodevs/employee-crud.git
 cd employee-crud
 cd employee-api
 ```
